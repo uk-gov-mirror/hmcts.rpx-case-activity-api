@@ -5,7 +5,7 @@ __metadata:
   version: 10
   cacheKey: 10
 
-"@azure-rest/core-client@npm:^2.5.2":
+"@azure-rest/core-client@npm:^2.3.3, @azure-rest/core-client@npm:^2.5.2":
   version: 2.7.0
   resolution: "@azure-rest/core-client@npm:2.7.0"
   dependencies:
@@ -28,7 +28,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/core-auth@npm:^1.10.0, @azure/core-auth@npm:^1.10.1, @azure/core-auth@npm:^1.9.0":
+"@azure/core-auth@npm:^1.10.0, @azure/core-auth@npm:^1.10.1, @azure/core-auth@npm:^1.3.0, @azure/core-auth@npm:^1.9.0":
   version: 1.10.1
   resolution: "@azure/core-auth@npm:1.10.1"
   dependencies:
@@ -54,7 +54,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/core-rest-pipeline@npm:^1.17.0, @azure/core-rest-pipeline@npm:^1.19.0, @azure/core-rest-pipeline@npm:^1.22.0, @azure/core-rest-pipeline@npm:^1.22.2, @azure/core-rest-pipeline@npm:^1.24.0":
+"@azure/core-lro@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@azure/core-lro@npm:2.7.2"
+  dependencies:
+    "@azure/abort-controller": "npm:^2.0.0"
+    "@azure/core-util": "npm:^1.2.0"
+    "@azure/logger": "npm:^1.0.0"
+    tslib: "npm:^2.6.2"
+  checksum: 10/73b4e1d74afc0dc647914db3a79b6212b653d853f6ff7105eb6e19ab2f7af11cef99d6388b3125179c8872db819930ac0ab9768b07c06a3033dd22fa546f8a09
+  languageName: node
+  linkType: hard
+
+"@azure/core-paging@npm:^1.6.2":
+  version: 1.6.2
+  resolution: "@azure/core-paging@npm:1.6.2"
+  dependencies:
+    tslib: "npm:^2.6.2"
+  checksum: 10/fb1d4c4fcd5705dbcd2332724d0ead324b988a874bfe739483cf65056b8ad5567aaa5ae02f4d0467c71c3be035bbd15682fe0d8f6e47043a66903d439593f5b8
+  languageName: node
+  linkType: hard
+
+"@azure/core-rest-pipeline@npm:^1.17.0, @azure/core-rest-pipeline@npm:^1.19.0, @azure/core-rest-pipeline@npm:^1.22.0, @azure/core-rest-pipeline@npm:^1.22.2, @azure/core-rest-pipeline@npm:^1.24.0, @azure/core-rest-pipeline@npm:^1.8.0":
   version: 1.24.0
   resolution: "@azure/core-rest-pipeline@npm:1.24.0"
   dependencies:
@@ -78,7 +99,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/core-util@npm:^1.11.0, @azure/core-util@npm:^1.13.0":
+"@azure/core-util@npm:^1.10.0, @azure/core-util@npm:^1.11.0, @azure/core-util@npm:^1.13.0, @azure/core-util@npm:^1.2.0":
   version: 1.13.1
   resolution: "@azure/core-util@npm:1.13.1"
   dependencies:
@@ -106,7 +127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/identity@npm:^4.13.1":
+"@azure/identity@npm:^4.13.0, @azure/identity@npm:^4.13.1":
   version: 4.13.1
   resolution: "@azure/identity@npm:4.13.1"
   dependencies:
@@ -125,7 +146,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/logger@npm:^1.0.0, @azure/logger@npm:^1.3.0":
+"@azure/keyvault-common@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@azure/keyvault-common@npm:2.1.0"
+  dependencies:
+    "@azure-rest/core-client": "npm:^2.3.3"
+    "@azure/abort-controller": "npm:^2.0.0"
+    "@azure/core-auth": "npm:^1.3.0"
+    "@azure/core-rest-pipeline": "npm:^1.8.0"
+    "@azure/core-tracing": "npm:^1.0.0"
+    "@azure/core-util": "npm:^1.10.0"
+    "@azure/logger": "npm:^1.1.4"
+    tslib: "npm:^2.2.0"
+  checksum: 10/ce231f7812b897afd6c4b0568ba6b0604a94706accfc08b3f9c0cb8d3e07e036fca38b771bc8ec8f4a8c3a05121d9d3096a7d92895902441987359274e88cb67
+  languageName: node
+  linkType: hard
+
+"@azure/keyvault-secrets@npm:^4.10.0":
+  version: 4.11.2
+  resolution: "@azure/keyvault-secrets@npm:4.11.2"
+  dependencies:
+    "@azure-rest/core-client": "npm:^2.3.3"
+    "@azure/abort-controller": "npm:^2.1.2"
+    "@azure/core-auth": "npm:^1.9.0"
+    "@azure/core-lro": "npm:^2.7.2"
+    "@azure/core-paging": "npm:^1.6.2"
+    "@azure/core-rest-pipeline": "npm:^1.19.0"
+    "@azure/core-tracing": "npm:^1.2.0"
+    "@azure/core-util": "npm:^1.11.0"
+    "@azure/keyvault-common": "npm:^2.1.0"
+    "@azure/logger": "npm:^1.1.4"
+    tslib: "npm:^2.8.1"
+  checksum: 10/e38610e85e0d11a8b62ebb49b7a673df08773c5520211e89a8d09782ec0e31bb4466d425a56ca9c9e03d2d0f5243b352ecf5fccd7f6ec05716aefe51a9597c92
+  languageName: node
+  linkType: hard
+
+"@azure/logger@npm:^1.0.0, @azure/logger@npm:^1.1.4, @azure/logger@npm:^1.3.0":
   version: 1.3.0
   resolution: "@azure/logger@npm:1.3.0"
   dependencies:
@@ -495,14 +551,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hmcts/properties-volume@npm:^0.0.14":
-  version: 0.0.14
-  resolution: "@hmcts/properties-volume@npm:0.0.14"
+"@hmcts/properties-volume@npm:^1.0.0":
+  version: 1.4.1
+  resolution: "@hmcts/properties-volume@npm:1.4.1"
   dependencies:
+    "@azure/identity": "npm:^4.13.0"
+    "@azure/keyvault-secrets": "npm:^4.10.0"
     "@hmcts/nodejs-logging": "npm:^4.0.4"
-    lodash: "npm:^4.17.11"
-    path: "npm:^0.12.7"
-  checksum: 10/3859effd7c1579f151a050e85514ca73a341ae9a6be9246e8f3995cf86eafceecac8f64fba38281b3c20f518f1dae744428dbf5c3d6a33782d493dcb3995aeec
+    js-yaml: "npm:^4.1.1"
+    lodash: "npm:^4.18.0"
+  checksum: 10/e5c532a5a488e5dabf31858d7cc73c5ee9b5e362f880a44f9b32b7b2bfc4bc5610a839ae38c301ad3d83608beb0e5cff47bb49c5c85dde46f8cf880ec9303269
   languageName: node
   linkType: hard
 
@@ -2733,9 +2791,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.402":
-  version: 1.5.408
-  resolution: "electron-to-chromium@npm:1.5.408"
-  checksum: 10/02084c418bb1577f7f768e377c2d9f9c83b718ee272a6122b1cb4913ff7c12888116a24313dd6c642d1c74c41ab1d24adfa14d9649184ea4162920a15e5a5b41
+  version: 1.5.409
+  resolution: "electron-to-chromium@npm:1.5.409"
+  checksum: 10/2b1f6763b4142f1eed557fb8f29ee56f032bff66b82e7ae0bacf4339935abb91ae3fcc26be9b3293b7809dadf6e0a1d6b82e8ce00e189169c1bdce4fc0f99250
   languageName: node
   linkType: hard
 
@@ -5879,16 +5937,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path@npm:^0.12.7":
-  version: 0.12.7
-  resolution: "path@npm:0.12.7"
-  dependencies:
-    process: "npm:^0.11.1"
-    util: "npm:^0.10.3"
-  checksum: 10/d49d101f9596613cf4cd1d4ebc4e64ba9a9df5d9cd75a410cfe87a88ce4bf0e2617ff44b92025376f7ecb02e88a6308b27f7f39d810f2335a5126f762487adfb
-  languageName: node
-  linkType: hard
-
 "pathval@npm:^1.1.1":
   version: 1.1.1
   resolution: "pathval@npm:1.1.1"
@@ -6017,13 +6065,6 @@ __metadata:
   dependencies:
     fromentries: "npm:^1.2.0"
   checksum: 10/4cc56df51bf54d7629c1857e472c9440984d230c4a4dfdfc2de25abcee57b3d8f4bdfb0b9ad65fe7eea11a7a10f03474c3e8c5eb554454d32c86444e635c85f8
-  languageName: node
-  linkType: hard
-
-"process@npm:^0.11.1":
-  version: 0.11.10
-  resolution: "process@npm:0.11.10"
-  checksum: 10/dbaa7e8d1d5cf375c36963ff43116772a989ef2bb47c9bdee20f38fd8fc061119cf38140631cf90c781aca4d3f0f0d2c834711952b728953f04fd7d238f59f5b
   languageName: node
   linkType: hard
 
@@ -6389,7 +6430,7 @@ __metadata:
   dependencies:
     "@hmcts/nodejs-healthcheck": "npm:^1.8.0"
     "@hmcts/nodejs-logging": "npm:^4.0.4"
-    "@hmcts/properties-volume": "npm:^0.0.14"
+    "@hmcts/properties-volume": "npm:^1.0.0"
     applicationinsights: "npm:^3.15.1"
     body-parser: "npm:^2.3.0"
     chai: "npm:^4.3.6"
@@ -7368,15 +7409,6 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 10/474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
-  languageName: node
-  linkType: hard
-
-"util@npm:^0.10.3":
-  version: 0.10.4
-  resolution: "util@npm:0.10.4"
-  dependencies:
-    inherits: "npm:2.0.3"
-  checksum: 10/1200a1ca2b474758342b3a0c5261c56f14ef09ad7eeaec3e6f449f5776ecdfce09a153cad62652b823e74647cdcfd2918552eadd2434783dfb58dabc5061803a
   languageName: node
   linkType: hard
 
